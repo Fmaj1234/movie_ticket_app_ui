@@ -1,16 +1,11 @@
 # movie_ticket_app_ui
 
-A new Flutter project.
+A preview of the app
 
-## Getting Started
+https://github.com/Fmaj1234/movie_ticket_app_ui/assets/49940296/7be99adf-d028-4037-83a7-77b6d4267c87
 
-This project is a starting point for a Flutter application.
+![Screenshot_20230726-181823_iphone13midnight_portrait](https://github.com/Fmaj1234/movie_ticket_app_ui/assets/49940296/daf0f1ff-5ecd-4940-aac7-667d254a9d04)
 
-A few resources to get you started if this is your first Flutter project:
+![Screenshot_20230726-181837_iphone13starlight_portrait](https://github.com/Fmaj1234/movie_ticket_app_ui/assets/49940296/11fb59f2-aea6-4e70-90fe-6c4ff21f6aa9)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20230726-181847_iphone13starlight_portrait](https://github.com/Fmaj1234/movie_ticket_app_ui/assets/49940296/ca33a3d6-9238-4326-ae1e-1f8385269d97)
