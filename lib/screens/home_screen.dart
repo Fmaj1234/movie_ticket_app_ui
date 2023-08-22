@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticket_app_ui/screens/booking_screen.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class HomeScreen extends StatelessWidget {
   List movies = [
@@ -81,7 +82,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
+            ).animate().fade(duration: const Duration(milliseconds: 800)),
             SizedBox(
               height: 390,
               child: ListView.builder(
@@ -98,7 +99,8 @@ class HomeScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => BookingScreen(movie: movies[index]),
+                                builder: (context) =>
+                                    BookingScreen(movie: movies[index]),
                               ),
                             );
                           },
@@ -161,7 +163,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                  );
+                  )
+                      .animate()
+                      .fadeIn(
+                        delay: Duration(milliseconds: 300 * index),
+                      )
+                      .scale();
                 },
               ),
             ),
@@ -200,7 +207,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            ),
+            ).animate().fade(duration: const Duration(milliseconds: 800)),
             SizedBox(height: 5),
             SizedBox(
               height: 300,
@@ -244,7 +251,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       ],
                     ),
-                  );
+                  )
+                      .animate()
+                      .fadeIn(
+                        delay: Duration(milliseconds: 300 * index),
+                      )
+                      .slideX();
                 },
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticket_app_ui/screens/home_screen.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -26,7 +27,9 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
               ),
-            ),
+            ).animate(delay: const Duration(milliseconds: 600))
+                        .fade(duration: const Duration(milliseconds: 600))
+                        .slideX(),
             SizedBox(height: 30),
             Text(
               "Grab your tickets now",
@@ -35,7 +38,9 @@ class WelcomeScreen extends StatelessWidget {
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
-            ),
+            ).animate(delay: const Duration(milliseconds: 600))
+                        .fade(duration: const Duration(milliseconds: 800))
+                        .slideX(),
             SizedBox(height: 50),
             InkWell(
               onTap: () {
@@ -61,7 +66,13 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+            ).animate(delay: const Duration(milliseconds: 600)).slideY(
+            begin: 1,
+            duration: const Duration(
+              milliseconds: 600,
             ),
+            curve: Curves.fastLinearToSlowEaseIn,
+          ),
           ],
         ),
       ),

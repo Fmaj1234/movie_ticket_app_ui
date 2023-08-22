@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class BookingScreen extends StatelessWidget {
   String movie;
@@ -147,7 +148,7 @@ class BookingScreen extends StatelessWidget {
                         ),
                       ),
                     ],
-                  ),
+                  ).animate().fade(duration: const Duration(milliseconds: 800)),
                   SizedBox(height: 20),
                   Text(
                     "Select Date",
@@ -201,7 +202,12 @@ class BookingScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                        );
+                        )
+                            .animate()
+                            .fadeIn(
+                              delay: Duration(milliseconds: 300 * index),
+                            )
+                            .scale();
                       },
                     ),
                   ),
@@ -269,7 +275,12 @@ class BookingScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                        );
+                        )
+                            .animate()
+                            .fadeIn(
+                              delay: Duration(milliseconds: 300 * index),
+                            )
+                            .slideX();
                       },
                     ),
                   ),
@@ -337,7 +348,12 @@ class BookingScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                        );
+                        )
+                            .animate()
+                            .fadeIn(
+                              delay: Duration(milliseconds: 300 * index),
+                            )
+                            .shimmer();
                       },
                     ),
                   ),
@@ -362,7 +378,13 @@ class BookingScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ),
+                  ).animate(delay: const Duration(milliseconds: 400)).slideY(
+                        begin: 1,
+                        duration: const Duration(
+                          milliseconds: 400,
+                        ),
+                        curve: Curves.fastLinearToSlowEaseIn,
+                      ),
                 ],
               ),
             ),
